@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
 
 // LIBRARY  
@@ -11,17 +12,22 @@ import { AppRoutingModule } from './app-routing.module';
 
 // COMPONENTS  
 import { AppComponent } from './app.component';
+import { AppIndexComponent } from './components/app-index/app-index.component';
+import { AppNotFoundComponent } from './components/app-not-found/app-not-found.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    AppIndexComponent,
+    AppNotFoundComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    BrowserAnimationsModule,
     MaterialModule,
     DevextremeModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,42 @@
+<div fxLayout="row" class="demo-container">
+    <div fxFlex="25%" class="row"><!-- LEFT --></div>
+    <div fxFlex="50%" fxLayout="column" class="row">
+
+        <header>
+            Basic TagBox
+        </header>
+        <section fxLayout="row">
+            <div fxFlex="48%" class="column">
+                
+                <!--
+                ALPHA
+                -->
+                <dx-tag-box
+                    [dataSource]="data"
+                    valueExpr="ID"
+                    displayExpr="Name">
+                </dx-tag-box>
+                <!--
+                [end] ALPHA
+                -->
+            </div>
+            <mat-divider [vertical]="true"></mat-divider>
+            <div fxFlex="48%" class="column">
+                <h3>DevExtreme</h3>
+                <ol>
+                    <li>
+                        <div>
+                            <a routerLinkActive="active" routerLink="/tag-box">TagBox</a> | 
+                            <a href="https://js.devexpress.com/Documentation/ApiReference/UI_Components/dxTagBox/" target="_blank">API Reference</a>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+        </section>
+        <footer>
+            "DevExtreme + Angular Material" project | Elwood Berry, Senior Frontend Developer @ eberry@viewgol.com
+        </footer>
+
+    </div>
+    <div fxFlex="25%" class="row"><!-- RIGHT --></div>
+</div>
