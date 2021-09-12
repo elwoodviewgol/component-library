@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-tag-box-alpha',
@@ -6,6 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tag-box-alpha.component.scss']
 })
 export class TagBoxAlphaComponent implements OnInit {
+
+  @Input() data: any[] = [];
 
   constructor() { }
 
